@@ -1,0 +1,23 @@
+body {
+    font-family: $font-body, sans-serif;
+    color: $font-body-color;
+}
+main {
+    width: 100%;
+    margin: 0 auto;
+    border-top: solid $font-body-color 50px;
+}
+header {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto 2em;
+    // nesting
+    a {
+        font-size: 1.25;
+        margin-right: .5em;
+    }
+}
+a {
+    color: #24a4ea;
+    text-decoration: none;
+}
