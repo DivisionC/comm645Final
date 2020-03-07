@@ -5,25 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Diego Pinball Club</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
     <header>
+        <h1>San Diego Pinball Club</h1>
         <nav>
             <input type="checkbox" id="showMenu" role="button" />
-            <label for="showMenu" class="showMenu">Menu<span class="fas fa-chevron-circle-down"></span><span class="fas fa-chevron-circle-up"></span></label>
+            <label for="showMenu" class="showMenu">Menu <span class="fas fa-chevron-circle-down"></span><span class="fas fa-chevron-circle-up"></span></label>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#calendar">Calendar</a></li>
-                <li><a href="https://www.ifpapinball.com/calendar/" target="_blank">IFPA</a></li>
-                <li><a href="https://pinballmap.com/sandiego/" target="_blank">Pinball Map</a></li>
-                <li><a href="mailto:sdpinball@gmail.com">Contact Us</a></li>
+                <li><a href="#" class="btn-odd">Home</a></li>
+                <li><a href="pages/calendar.html" class="btn-even">Calendar</a></li>
+                <li><a href="pages/pictures.html" class="btn-odd">Pictures</a></li>
+                <li><a href="https://www.ifpapinball.com/calendar/" target="_blank" class="btn-even">IFPA</a></li>
+                <li><a href="https://pinballmap.com/sandiego/" target="_blank" class="btn-odd">Pinball Map</a></li>
+                <li><a href="mailto:sdpinball@gmail.com" class="btn-even">Contact Us</a></li>
             </ul>
         </nav>
 
     </header>
     <main>
-        
+        <article>
+            <h2>Welcome!</h2>
+            <p>This the home page of the San Diego Pinball Club!  We are a fun bunch who get together to find and play pinball.  Some of us compete competitively.  Some flip for fun.  A lot of us do both!</p>
+            <h3>Did You Know?</h3>
+            <dl>
+                <dt>Pinjury</dt>
+                <dd>An injury sustained specifically because of pinball.</dd>
+                <dd>This can include maladies suffered due to playing pinball or through the effort of supporting the hobby or the sport of pinball.</dd>
+            </dl>
+            <p>Examples of Pinjuries include but are certainly not limited to the following:
+            </p>
+            <ul>
+                <li>Spraining a wrist due to too many slap saves, or bang backs, or death saves for that matter</li>
+                <li>Accidents that can occur due to moving many machines, especially over a short period of time</li>
+                <li>Hmm, that soldering iron tends to get pretty hot. Should be more careful in the future.</li>
+                <li>Bending over for a low viewing angle? The lower back tends to dislike that.</li>
+                <li>Be careful after levelling those games. Don’t bash your head on the underside of the game when you get back up.</li>
+                <li>The overall physical and mental effects of running popular pinball tournaments</li>
+            </ul>
+        </article>
+        <aside>
+            <h3>Top Places to Flip</h3>
+            <p>If you're looking for pinball, these are the best places to find it.  But don't stop here.  Check out the local Pinball Map in the top menu!</p>
+            <ol>
+                <li>Aero Club Bar</li>
+                <li>Harbor Town Pub</li>
+                <li>Brewskis Bar</li>
+                <li>Waterfront</li>
+                <li>The High Dive</li>
+            </ol>
+            <figure>
+                <img src="images/sdpc.jpg" alt="the club">
+            </figure>
+        </aside>
     </main>
+    <footer>
+        <p>Copyright &copy;2020 San Diego Pinball Club. All rights reserved.</p>
+    </footer>
 </body>
 </html>

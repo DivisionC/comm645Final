@@ -3,9 +3,28 @@
 
 @import url('https://fonts.googleapis.com/css?family=Francois+One|Noto+Sans+SC&display=swap');
 
-// variables
+// REQ - variables
+$word-of-the-day: quote(Pinjury);
 $font-headings: 'Francois One';
 $font-body: 'Noto Sans SC';
-$font-body-color: #333;
+$color-body-text: #333;
+// REQ - built-in Sass function
+$color-body-text-comp: complement($color-body-text);
+$max-width: 1200px;
+$gutter-img: 1%;
 
-$roundness: 20px 0 20px 0; // list properties
+// breakpoints
+$break1: 540px;
+$break2: 740px;
+$break3: 1100px;
+
+ // REQ - list properties
+$padding-btn: 6px 12px;
+$radius-btn: 4px;
+
+// REQ - map
+$color-btn: (
+    odd: $color-body-text,
+    // REQ - color modifier
+    even: invert($color-body-text)
+);

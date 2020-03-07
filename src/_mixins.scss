@@ -1,0 +1,39 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+/* creates a grid of images based on screen size
+$qty is # of columns
+$margin is gutter */
+@mixin imageGrid($qty, $margin) {
+    // REQ - math operator
+    width: ((100% - (($qty - 1) * $margin)) / $qty);
+    &:nth-child(n) {
+        margin-bottom: $margin;
+        margin-right: $margin;
+    }
+    // handles last item in the grid
+    &:nth-child(#{$qty}n) {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
+
+// $args... allows you to pass a list of arbitrary arguments
+@mixin break($args...) {
+    // REQ - if/else
+    @if length($args) == 1 {
+        @media (min-width: nth($args, 1)) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: nth($args, 1)) and (max-width: nth($args, 2)) {
+            @content;
+        }
+    }
+}
